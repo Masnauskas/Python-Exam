@@ -37,8 +37,12 @@ print('-------------------------------------------------------------------------
 # getUsersNames
 
 def getUsersNames(array_input):
+  #kuriam naują masyvą users_names
+  #naujam masyvui priskiariam visus name values interuodami per users(array_input) masyvą
   users_names = [x["name"] for x in array_input]
+  #surikiuojam users_names masyvą abecelės tvarka
   users_names.sort()
+  #gražinam surikiuotą masyvą
   return users_names
   
-print(getUsersNames(users))
+print('User names list sorted alphabetically:', getUsersNames(users))

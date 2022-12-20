@@ -26,7 +26,10 @@ def getUserAverageAge(array_input):
   #atsirenkam tik "age"
   users_filtered = list(filter(lambda x: isinstance(x['age'], int), array_input))
   #skaiciuojam vidurkį
-  #
+  #su sum() sudedam visus pasiimtus "age" value su get() ir padalinam iš masyvo ilgio len() - devyni
+  #su round() suapvalinam skaičių
   return round(sum(i.get('age', 0) for i in users_filtered) / len(users_filtered))
 
-print(getUserAverageAge(users))
+print('User average age is:', getUserAverageAge(users))
+
+print('---------------------------------------------------------------------------------------------------------------------')

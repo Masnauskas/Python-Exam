@@ -18,4 +18,10 @@ users = [
   { "id": '9', "name": 'Daniel Cane', "age": 51, "hasDog": True },
 ]
 
-# testing git branch
+# filterDogOwers
+
+def filterDogOwers(array_input): 
+  return list(filter(lambda x: x["hasDog"] == True, array_input)) #programuojam lamba funkciją, kuri priima parametrą x. tada iš masyvo pasiimam "hasDog" ir filtrupjam jeigu jo reikšmė True.
+      
+print(filterDogOwers(users))
+

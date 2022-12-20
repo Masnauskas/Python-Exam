@@ -23,12 +23,13 @@ users = [
 def filterDogOwers(array_input): 
   return list(filter(lambda x: x["hasDog"] == True, array_input)) #programuojam lamba funkciją, kuri priima parametrą x. tada iš masyvo pasiimam "hasDog" ir filtruojam jeigu jo reikšmė True.
       
-print(filterDogOwers(users))
+print('Has dogs: ',filterDogOwers(users))
 
+print('------------------------------------------------------------------------------------------------')
 
 # filterAdults
 
 def filterAdults(array_input):
   return list(filter(lambda x: x["age"] >= 18, array_input)) #programuojam lamba funkciją, kuri priima parametrą x. Tada iš masyvo pasiimam age ir filtruojam jeigu age daugiau ar lygu 18kai.
 
-print(filterAdults(users))
+print('Only adults: ',filterAdults(users))

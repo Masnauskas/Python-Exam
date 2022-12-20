@@ -20,4 +20,13 @@ users = [
   { "id": '9', "name": 'Daniel Cane', "age": 51 },
 ]
 
-#testing branch
+# getUserAverageAge
+
+def getUserAverageAge(array_input):
+  #atsirenkam tik "age"
+  users_filtered = list(filter(lambda x: isinstance(x['age'], int), array_input))
+  #skaiciuojam vidurkį
+  #
+  return round(sum(i.get('age', 0) for i in users_filtered) / len(users_filtered))
+
+print(getUserAverageAge(users))

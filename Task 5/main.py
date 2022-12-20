@@ -1,10 +1,12 @@
 # Importuokite reikiamus modulius, kad veiktų žemiau nurodytos funkcijos
 
-from modules.math.composition import composition as addition
+#importuojami moduliai
+from modules.math.composition import composition as addition #skiriasi nuo žemiau parašytos funkcijos, tad importuojama 'as'
 from modules.math.subtraction import substraction
-from modules.math.division import division as divivsion
-from modules.math.multiplication import multiplication
+from modules.math.division import division as divivsion #skiriasi nuo žemiau parašytos funkcijos, tad importuojama 'as'
+from modules.math.multiplication import multiplication #skiriasi nuo žemiau parašytos funkcijos, tad importuojama 'as'
 
+# importuojami kintamieji
 from modules.numbers.numbers import one, two, three, four, five
 
 

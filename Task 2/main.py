@@ -1,3 +1,4 @@
+import time
 # Turimas "users" masyvas. 
 
 # Parašykite funkcijas, kurios atlikas nurodytas užduotis:
@@ -19,7 +20,9 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30 },
   { "id": '9', "name": 'Daniel Cane', "age": 51 },
 ]
-
+print('Original users array:', users)
+time.sleep(2)
+print('---------------------------------------------------------------------------------------------------------------------')
 # getUserAverageAge
 
 def getUserAverageAge(array_input):
@@ -31,7 +34,7 @@ def getUserAverageAge(array_input):
   return round(sum(i.get('age', 0) for i in users_filtered) / len(users_filtered))
 
 print('User average age is:', getUserAverageAge(users))
-
+time.sleep(2)
 print('---------------------------------------------------------------------------------------------------------------------')
 
 # getUsersNames

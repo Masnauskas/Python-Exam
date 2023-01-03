@@ -1,3 +1,4 @@
+import time
 # Turimas "users" masyvas. 
 
 # Parašykite funkcijas, kurios atlikas nurodytas užduotis:
@@ -17,3 +18,26 @@ users = [
   { "id": '8', "name": 'Simon Peterson', "age": 30, "hasDog": False },
   { "id": '9', "name": 'Daniel Cane', "age": 51, "hasDog": True },
 ]
+
+print('Original users array:', users)
+
+time.sleep(2)
+print('------------------------------------------------------------------------------------------------')
+
+# filterDogOwers
+
+def filterDogOwers(array_input): 
+  return list(filter(lambda x: x["hasDog"] == True, array_input)) #programuojam lamba funkciją, kuri priima parametrą x. tada iš masyvo pasiimam "hasDog" ir filtruojam jeigu jo reikšmė True.
+      
+print('Has dogs: ',filterDogOwers(users))
+
+time.sleep(2)
+
+print('------------------------------------------------------------------------------------------------')
+
+# filterAdults
+
+def filterAdults(array_input):
+  return list(filter(lambda x: x["age"] >= 18, array_input)) #programuojam lamba funkciją, kuri priima parametrą x. Tada iš masyvo pasiimam age ir filtruojam jeigu age daugiau ar lygu 18kai.
+
+print('Only adults: ',filterAdults(users))

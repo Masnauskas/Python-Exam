@@ -10,6 +10,8 @@ from modules.math.multiplication import multiplication #skiriasi nuo žemiau par
 from modules.numbers.numbers import one, two, three, four, five
 
 
+# Matomai viskas kopijuota iš JS, nes su kabliataškiais
+# Norėjau pridėti time.sleep(), bet parašyta, kad nekeistume kodo...
 
 # Kitų failų ir žemiau esančio kodo nekeiskite
 a = addition(one, four);

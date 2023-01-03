@@ -1,3 +1,4 @@
+import time
 # Sukurkite klasę "Movie", kuri gebės sukurti objektus 3 savybėm ir 1 metodu. 
 # Naudojant šią klasę sukurkite bent du skirtingus objektus.
 
@@ -23,18 +24,28 @@ class Movie:
     #kuriamas wasExpensive metodas, kuris pasakys ar filmas buvo brangus    
     def wasExpensive(self):
         if self.budget > 100000000:
-            return f'Movie was expensive: {True}'
+            return f'{self.title} was an expensive movie: {True}'
         else:
-            return f'Movie was expensive: {False}'
+            return f'{self.title} was an expensive movie: {False}'
 
 #kuriami du Movie objektai: movie1 ir movie2        
 movie1 = Movie('Blockbuster 9000', 'Mr. Fancy Pants', 900000000)
-movie2 = Movie('Trash Movie', 'Mr. Trash van Bin', 5000)
+movie2 = Movie('TrashMovie', 'Mr. Trash van Bin', 5000)
 
 #atspausdinam pažiūrėti ar viskas gerai su objektais
+print('------ Movie 1: ------')
 print(movie1)
+time.sleep(2)
+print('------ Movie 2: ------')
 print(movie2)
 
+time.sleep(4)
+print('------ printing wasExpensive() method: ------')
+time.sleep(2)
+
 #atspausdinamas metodas wasExpensive pasakantis ar filmas buvo brangus. Grąžina True arba False
+print('------ Movie 1: ------')
 print(movie1.wasExpensive())
+time.sleep(2)
+print('------ Movie 2: ------')
 print(movie2.wasExpensive())
